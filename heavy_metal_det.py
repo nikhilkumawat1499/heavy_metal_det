@@ -85,13 +85,13 @@ def authenticate():
     # Define the Streamlit app
 def main():
     # Set the title of the app
-    model_cd = keras.models.load_model('pickeled models\model_cd.h5')
+    model_cd = keras.models.load_model('heavy_metal_det\pickeled models\model_cd.h5')
 
-    model_cu = keras.models.load_model('pickeled models\model_cu.h5')
+    model_cu = keras.models.load_model('heavy_metal_det\pickeled models\model_cu.h5')
 
-    model_hg = keras.models.load_model('pickeled models\model_hg.h5')
+    model_hg = keras.models.load_model('heavy_metal_det\pickeled models\model_hg.h5')
 
-    model_pb = keras.models.load_model('pickeled models\model_pb.h5')
+    model_pb = keras.models.load_model('heavy_metal_det\pickeled models\model_pb.h5')
     st.title('Heavy Metal Detection')
     
     if authenticate():
